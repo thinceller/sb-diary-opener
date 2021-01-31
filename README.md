@@ -1,1 +1,1 @@
-# sb-diary-opener
+# sb_diary_opener
