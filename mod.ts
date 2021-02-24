@@ -9,6 +9,6 @@ export async function open(projectName: string, title: string) {
     darwin: "open",
     linux: "sensible-browser",
   };
-  const process = Deno.run({ cmd: [programAliases[Deno.build.os], url] });
+  const process = Deno.run({ cmd: [programAliases[Deno.build.os], encodeURIComponent(url)] });
   await process.status();
 }
